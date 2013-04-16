@@ -105,37 +105,6 @@ public class HdfsUtils {
 	
 	///////////////////////////////
 	public static void main(String[] args) {
-		/*
-		String localFile = "E:/联想项目/04.01-09-log/p_log_file_date=2012-04-01/test.txt";
-		String hdfsFile = "hdfs://master:9100/user/root/hdfsDemo/" + getFileName(localFile);
-		HdfsWrite.uploadToHdfs(localFile, hdfsFile);
-		System.out.println("上传成功...");
-		*/
 		
-		/*
-		String hdfsFile = "hdfs://master:9100/user/root/hdfsDemo/test.txt";
-		StringBuffer content = new StringBuffer(64);
-		content.append("\nhhhhhhhhhhhh\n");
-		content.append("iiiiiiiiiii\n");
-		content.append("jjjjjjjjjjjjjj\n");
-		content.append("kkkkkkkkkkkkkkkkkkk\n");
-		content.append("llllllllllllllllllllll\n");
-		content.append("mmmmmmmmmmmmmm\n");
-		content.append("nnnnnnnnnnnnnnnnnnnnn\n");
-		//String content = "E:/联想项目/04.01-09-log/p_log_file_date=2012-04-01/test_append.txt";
-		HdfsWrite.appendToHdfs(hdfsFile, content.toString());
-		System.out.println("添加成功...");
-		*/
-		
-		/*
-		String hdfsFile = "hdfs://master:9100/user/root/hdfsDemo/rps.log*";
-		if(HdfsWrite.deleteHdfsFile(hdfsFile)){
-			System.out.println("删除成功...");
-		}else{
-			System.out.println("删除失败...");
-		}
-		*/
-		
-		HdfsUtils.uploadToHdfs("E:/联想项目/04.01-09-log/p_log_file_date=2012-04-01/rps.log*");
 	}
 }
