@@ -107,6 +107,5 @@ public class HdfsUtils {
 	public static void main(String[] args) {
 		
 		
-		
 	}
 }
